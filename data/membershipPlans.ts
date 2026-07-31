@@ -1,0 +1,47 @@
+export const membershipPlans = [
+  {
+    id: 1,
+    name: "Essential",
+    price: "₹1,999",
+    duration: "/month",
+    description: "Perfect for beginners starting their fitness journey.",
+    popular: false,
+    features: [
+      "Unlimited Gym Access",
+      "Locker Facility",
+      "Free Wi-Fi",
+      "Fitness Assessment",
+      "Mobile App Access",
+    ],
+  },
+  {
+    id: 2,
+    name: "Pro",
+    price: "₹3,499",
+    duration: "/month",
+    description: "Our most popular plan for serious fitness enthusiasts.",
+    popular: true,
+    features: [
+      "Everything in Essential",
+      "Unlimited Group Classes",
+      "Nutrition Guidance",
+      "Monthly Progress Tracking",
+      "Steam & Shower Access",
+    ],
+  },
+  {
+    id: 3,
+    name: "Elite",
+    price: "₹5,999",
+    duration: "/month",
+    description: "The complete premium experience with personal coaching.",
+    popular: false,
+    features: [
+      "Everything in Pro",
+      "Dedicated Personal Trainer",
+      "Customized Diet Plan",
+      "Priority Support",
+      "Recovery Zone Access",
+    ],
+  },
+];

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { openMembershipChat } from "@/lib/whatsapp";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -62,9 +63,12 @@ export default function Navbar() {
         </nav>
 
         {/* CTA */}
-        <button className="hidden lg:block bg-red-600 hover:bg-red-700 hover:scale-105 transition-all duration-300 px-7 py-3 rounded-xl font-semibold shadow-lg shadow-red-600/30">
-          Start Today →
-        </button>
+        <button
+  onClick={openMembershipChat}
+  className="hidden lg:block bg-red-600 hover:bg-red-700 hover:scale-105 transition-all duration-300 px-7 py-3 rounded-xl font-semibold shadow-lg shadow-red-600/30"
+>
+  Start Today →
+</button>
 
         {/* Mobile Menu Button */}
         <button
@@ -90,7 +94,9 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <button className="bg-red-600 rounded-xl py-3 font-semibold">
+            <button
+  onClick={openMembershipChat}
+  className="bg-red-600 rounded-xl py-3 font-semibold">
               Start Today
             </button>
           </div>

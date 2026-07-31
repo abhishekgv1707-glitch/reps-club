@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import FloatingCard from "@/components/ui/FloatingCard";
+import { openMembershipChat } from "@/lib/whatsapp";
 
 const stats = [
   { value: "5000+", label: "Active Members" },
@@ -64,9 +65,12 @@ export default function Hero() {
               transition={{ delay: 0.5 }}
               className="mt-10 flex flex-wrap gap-5"
             >
-              <button className="rounded-xl bg-red-600 px-8 py-4 font-semibold transition hover:scale-105 hover:bg-red-700">
-                🔥 Start Your Journey
-              </button>
+              <button
+  onClick={openMembershipChat}
+  className="rounded-xl bg-red-600 px-8 py-4 font-semibold transition hover:scale-105 hover:bg-red-700"
+>
+  🔥 Start Your Journey
+</button>
 
               <button className="rounded-xl border border-white/20 px-8 py-4 font-semibold transition hover:bg-white hover:text-black">
                 ▶ Watch Gym Tour
